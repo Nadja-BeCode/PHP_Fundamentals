@@ -1,2 +1,2 @@
 # PHP_Fundamentals
-![Mountain](https://gph.is/g/46Al0YX)
+[GitHub](https://media.giphy.com/media/7E6kuuyguIJ3YdzdGq/giphy.gif)
