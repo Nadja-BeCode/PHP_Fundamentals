@@ -70,7 +70,21 @@ $me = array(
     print_r($me);
     echo '</pre>';
 
+$me['hobbies'] = array('cooking', 'piano', 'computer');
 
+/************************************************************************************************* */
+
+$boubou = array(
+    'age' => 101, 
+    'favourite_season' => 'Spring', 
+    'soccer' => false, 
+    'hobbies' => array('gaming', 'movies','drinking');
+);
+
+$me['boubou'] = $boubou; 
+echo '<pre>'; 
+print_r($me); 
+echo '</pre>'
 
 
 
