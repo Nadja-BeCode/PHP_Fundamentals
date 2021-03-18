@@ -142,7 +142,7 @@ if (isset($_GET['age']) && isset($_GET['gender']) && isset($_GET['english']){
 
 DO YOU SPEAK ENGLISH ?
 
-<input type="radio" name="gender" value="man" id="man" /> <label for="man">MAN</label>
+<input type="radio" name="human" value="man" id="man" /> <label for="man">MAN</label>
 <input type="radio" name="gender" value="woman" id="woman"/> <label for="woman">WOMAN</label>
 
 	<input type="submit" name="submit" value="Greet me now">
@@ -167,7 +167,7 @@ if (isset($_GET['gender']) && isset($_GET['age']) {
 <form method="get" action="">
 
 
-<input type="radio" name="age" value="man" id="man" /> <label for="man">MAN</label>
+<input type="radio" name="gender" value="man" id="man" /> <label for="man">MAN</label>
 <input type="radio" name="gender" value="woman" id="woman"/> <label for="woman">WOMAN</label>
 
 	<input type="submit" name="submit" value="Greet me now">

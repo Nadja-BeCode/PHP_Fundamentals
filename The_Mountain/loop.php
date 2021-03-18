@@ -7,12 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Are you a human, a cat or a unicorn ?</p>
+<?php
+    $names= array('John', 'jeanne', 'Joan', 'émile');
+    foreach ($names as $name){
+        echo ucfirst($name);
+    }
 
-   
-
-
-
-
+    ?>
 </body>
 </html>
