@@ -19,11 +19,13 @@
 </form>
 
    <?php
-            if (isset($_GET['gender'])) {
-                $animation = (($_GET['gender']) == "human") ? "<img src='https://media.giphy.com/media/8hYQgBIIHkCPjRTmai/giphy.gif' alt="human" />" :
-                            (($_GET['gender']) == "kitty") ? "<img src='https://media.giphy.com/media/3oz8xuDCPjxu93ThXq/giphy.gif' alt="kitty" />" :
-                            (($_GET['gender']) == "unicorn") ? "<img src='https://media.giphy.com/media/bmsCgWQEH9txC/giphy.gif' alt="unicorn" />";
+            if ((isset($_GET['gender']))) {
+                $animation = ($_GET['gender'] == "human") ? "<img src='https://media.giphy.com/media/8hYQgBIIHkCPjRTmai/giphy.gif' alt='animation' />" :
+                            (($_GET['gender'] == "kitty") ? "<img src='https://media.giphy.com/media/3oz8xuDCPjxu93ThXq/giphy.gif' alt='animation' />" :
+                            "<img src='https://media.giphy.com/media/bmsCgWQEH9txC/giphy.gif' alt='animation' />");
+                            echo $animation;
             }
+           
    ?>
 
 </body>
