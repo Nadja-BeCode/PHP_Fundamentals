@@ -156,7 +156,7 @@ $countries = array(
     <select id="country" name="country">
     <?php
     foreach ($countries as $iso => $country){
-    echo '<option value = ' . $country . ' />' . $iso . '</option>';
+    echo '<option value = ' . $iso . ' />' . $iso . '</option>';//ou $country - $iso 
     }
     ?>
     
