@@ -131,35 +131,40 @@ foreach ($start_up_members as $member){
 $coutries = array ('Canada','Korea','Angola','Portugal','Belgium','Russia','Israel','Mexico','Japan','Switzerland');
 ?></p>
 
-<form action="">
-    <label for="country">Select a country:</label><br/>
+/**************************************************************************************************** */
 
-    <select id="country" name="country"></select><br/>
-<input type="submit" value="submit">
 
-</form>
-
-<p><?php
+<?php
 $countries = array(
-    'CA'=> 'Canada'
-    'KR'=> 'Korea'
-    'JN'=> 'Japan'
-    'IL'=> 'Isreal'
-    'SW'=> 'Switzerland'
-    'PT'=> 'Portugal'
-    'RU'=> 'Russia'
-    'BE'=> 'Belgium'
-    'MX'=> 'Mexico'
+    'CA'=> 'Canada',
+    'KR'=> 'Korea',
+    'JN'=> 'Japan',
+    'IL'=> 'Isreal',
+    'SW'=> 'Switzerland',
+    'PT'=> 'Portugal',
+    'RU'=> 'Russia',
+    'BE'=> 'Belgium',
+    'MX'=> 'Mexico',
     'AO'=> 'Angola'
 );
 
-echo '<select id = "countries">'; 
-foreach($countries as $iso => $country){
-    echo '<option value = ' . "$iso" . ' />' . $country . '</option>';  
-}
-?></p>
+?>
 
+<form action="">
+    <label for="country">Select a country:</label><br/>
 
+    <select id="country" name="country">
+    <?php
+    foreach ($countries as $iso => $country){
+    echo '<option value = ' . $country . ' />' . $iso . '</option>';
+    }
+    ?>
+    
+    
+    </select><br/>
+<input type="submit" value="submit">
+
+</form>
 
 </body>
 </html>
