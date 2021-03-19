@@ -10,7 +10,7 @@
 
     <p>Are you a human, a cat or a unicorn ?</p>
 
-    <form method="get" action="">
+<form method="get" action="">
         <input type="radio" name="gender" value="human" id="human"/><label for="human">HUMAN</label>
         <input type="radio" name="gender" value="kitty" id="kitty"/><label for="kitty">KITTY</label>
         <input type="radio" name="gender" value="unicorn" id="unicorn"/><label for="unicorn">UNICORN</label>

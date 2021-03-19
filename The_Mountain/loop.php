@@ -55,8 +55,84 @@ foreach ($pronouns as $pronoun){
             }
 */
 ?></p>
+/*****************************************While loop AND For loop************************************************** */
 
-You can also loop inside a string
+<h1>Let's use another loop structure to do just that: the While loop</h1>
+
+<p><?php
+$amount_of_lines = 1;
+
+while ($amount_of_lines <= 100)
+{
+    echo $amount_of_lines . ". : I shall not watch flies fly when I'm learning PHP.<br />";
+    // shorthand writing for 
+    // $amount_of_lines = $amount_of_lines +1;
+    $amount_of_lines ++; 
+}
+?></p>
+
+<p>Here is a third looping structure: the For loop. Check this out :</p>
+
+<p><?php
+for ($amount_of_lines = 1; $amount_of_lines <= 100; $amount_of_lines ++)
+{
+    echo $amount_of_lines . '. : I shall not watch flies fly when I\'m learning PHP.<br />';
+}
+?></p>
+
+<p> Exercises:</p>
+<p>Write a script that prints the numbers from 1 to 120 using  while</p>
+
+<p><?php
+$script = 1;
+
+while ($script <= 120) {
+   echo 'This is the line n° ' . $script . '<br/>';
+   $script++;
+}
+?></p>
+
+<p>Write a script that prints the numbers from 1 to 120 using  for</p>
+
+
+<p><?php
+for ($script = 1; $script <= 120; $script++)
+{
+    echo 'This is the line n° ' . $script . '<br/>';
+}
+?></p>
+
+<p>Create an array containing the firstname of everyone in your startup. Display each firstname using a loop.</p>
+
+<p><?php
+$start_up_members = array ('Pierre','Paul','Jack','Janis','Luke','Bibi');
+
+foreach ($start_up_members as $member){
+    echo ucfirst($member) . '<br/>';
+}
+?></p>
+
+<p>Create an array containing at least 10 countries. Then, generate the html that will render a select box inside an html form (see mockup below). Of course, a loop will be useful...</p>
+
+<select name="choix">
+    <option value="choix1">Canada</option>
+    <option value="choix2">Korea</option>
+    <option value="choix3">Japan</option>
+    <option value="choix4">Israel</option>
+    <option value="choix1">Switzerland</option>
+    <option value="choix2">Portugal</option>
+    <option value="choix3">Russia</option>
+    <option value="choix4">Belgium</option>
+    <option value="choix1">Mexico</option>
+    <option value="choix2">Angola</option>
+</select>
+
+<p><?php
+$coutries = array ('Canada','Korea','Angola','Portugal','Belgium','Russia','Israel','Mexico','Japan','Switzerland');
+?></p>
+
+
+
 
 </body>
 </html>
