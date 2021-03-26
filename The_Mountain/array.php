@@ -73,7 +73,7 @@ $me = array(
 $me['hobbies'] = array('cooking', 'piano', 'computer');
 
 /************************************************************************************************* */
-
+<p><?php
 $boubou = array(
     'age' => 101, 
     'favourite_season' => 'Spring', 
@@ -88,7 +88,8 @@ echo '</pre>'
 
 
 
-?>
+?></p>
 
+?>
 </body>
 </html>
