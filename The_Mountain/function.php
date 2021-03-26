@@ -9,52 +9,41 @@
 <body>
 <p> What are functions ? What is their purpose ?</p>
 <?php
-    
-    $name = "Maurice";
-echo "<p>Hello $name!</p>";
-echo '<hr>';
-$name = "Alice";
-echo "<p> Hello $name!</p>";
-echo '<hr>';
-$name = "Jesus";
-echo "<p> Hello $name!</p>";
-echo '<hr>';
-$name = "Judas";
-echo "<p> Hello $name!</p>";
-echo '<hr>';
-// OUTPUT
-Hello Maurice!
-_______________________________
-Hello Alice!
-_______________________________
-Hello Jesus!
-_______________________________
-Hello Judas!
 
-//First, you need to declare the function to make it available. It is stored in memory, not ran.
-function say_hello($firstname){
-	echo "<p>Hello $firstname!</p>";
-	echo '<hr>';
+//Example: transform a string
+//The str_shuffle() function (read it as : "shuffle string") makes it easy to ... shuffle the characters of a given text.
+
+$str = 'This is going to be shuffled !';
+$str = str_shuffle($str);
+ 
+echo $str;
+?></p>
+
+
+<p><?php
+$str= " This is because the human mind does not read every letter by itself but the word as a whole.";
+
+$str= explode(" ", $str);
+foreach ($str as $word){
+	echo str_shuffle($word)." ";
 }
+?></p>
+// Exercises :
+// Use a function that capitalizes the first letter of the provided argument. Example: "émile"should return "Émile"
+<p><?php
+echo mb_convert_case('émile', MB_CASE_TITLE, "UTF-8");
+?></p>
 
-// Function calls during "Runtime" :
-say_hello("Maurice")
-say_hello("Alice");
-say_hello("Jésus");
-say_hello("Judas");
+//Use the native function allowing you to display the current year.
+<?php
+$year = date('Y');
+echo 'Bonjour ! Nous sommes en ' . $year;
+?>
 
-// OUTPUT
 
-Hello Maurice!
-_______________________________
-Hello Alice!
-_______________________________
-Hello Jesus!
-_______________________________
-Hello Judas!
-_______________________________
 
-    ?>
+
+
 
 </body>
 </html>
