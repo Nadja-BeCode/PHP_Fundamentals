@@ -34,12 +34,23 @@ foreach ($str as $word){
 echo mb_convert_case('émile', MB_CASE_TITLE, "UTF-8");
 ?></p>
 
-//Use the native function allowing you to display the current year.
+<p>Use the native function allowing you to display the current year.</p>
 <?php
 $year = date('Y');
 echo 'Bonjour ! Nous sommes en ' . $year;
 ?>
 
+<p>Now display the date, time, minutes and seconds, using the same function, by playing with the arguments.</p>
+
+<?php
+
+$day = date('d');
+$hour = date('H');
+$minute = date('i');
+$seconde = date('s');
+
+echo 'Bonjour ! Nous sommes le ' . $day . 'et il est ' . $hour . ' h ' . $minute. 'et' . $seconde .'seconde';
+?>
 
 
 
