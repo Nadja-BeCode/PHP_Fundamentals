@@ -52,7 +52,7 @@ $seconde = date('s');
 echo 'Bonjour ! Nous sommes le ' . $day . 'et il est ' . $hour . ' h ' . $minute. 'et' . $seconde .'seconde';
 ?>
 
-
+Crée a "Sum" function that takes 2 numbers and returns their sum.
 
 
 
